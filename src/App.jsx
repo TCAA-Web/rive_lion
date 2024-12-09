@@ -23,9 +23,6 @@ export default function App() {
     }),
     fitCanvasToArtboardHeight: true,
     autoplay: true,
-    onStateChange: (s) => {
-      console.log(s);
-    },
   });
 
   const eatInput = useStateMachineInput(rive, "controller", "isEating");
