@@ -48,7 +48,6 @@ export default function App() {
     }
     hpInput.value = hungerLevel;
     if (sadnessInput) {
-      console.log("hunger: ", hungerLevel);
       if (hungerLevel < 80) {
         sadnessInput.value = true;
       } else if (hungerLevel > 20) {
@@ -57,7 +56,6 @@ export default function App() {
     }
   }, 1000);
 
-  console.log(eatInput);
   return (
     <div className="RiveContainer">
       <RiveComponent />
